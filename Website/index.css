@@ -1,0 +1,21 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: lightskyblue;
+    margin: 0;
+}
+
+.container2 {
+    background-color: pink;
+    display: flex;
+}
