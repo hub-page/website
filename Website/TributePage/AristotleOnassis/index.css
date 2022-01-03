@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    width: 100%;
+
+    box-sizing: border-box;
+    background-image: url("Screen-Shot-2017-11-07-at-1.09.43-pm.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+a{
+    color: green;
+}
+
+a:hover{
+    color: red;
+}
+
+img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+footer {
+    margin-left: 25px;
+}
+
+#container {
+    background-color: rgba(234, 233, 233, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+#con1 {
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#p1 {
+    font-size: 14px;
+}
+
+#sem1 {
+    background-color: #bebbbb;
+}
+
+#con2 {
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+#auth {
+    margin-top: 40px;
+    margin-left: 120px;
+}

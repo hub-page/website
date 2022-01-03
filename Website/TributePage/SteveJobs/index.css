@@ -1,0 +1,95 @@
+* {
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-image: url("5568.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+#title {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: "Patua", serif;
+}
+#container {
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+}
+.semi1 {
+    width: 15%;
+}
+.semi2 {
+    width: 85%;
+}
+.flex1 {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+#title2 {
+    text-align: center;
+}
+
+#box1 {
+    box-sizing: border-box;
+    width: 70%;
+    background: rgba(21, 12, 54, 0.5);
+}
+#box2 {
+    box-sizing: border-box;
+    width: 30%;
+    background: rgba(72, 62, 3, 0.5);
+}
+img {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.flex-con {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+.flex {
+    width: 30%;
+}
+.flex0 {
+    width: 70%;
+    text-align: center;
+}
+#box3 {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: "Patua", serif;
+}
+a {
+    color: coral;
+}
+a:hover {
+    color: #59ffdf;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+    }
+    #figcaption {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    #figcaption {
+        text-align: center;
+        font-size: 25px;
+    }
+}
