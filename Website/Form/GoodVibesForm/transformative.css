@@ -46,7 +46,11 @@ h1 {
 
 .con2 {
     display: inline-block;
-    width: 40%;
+    width: 50%;
+}
+
+.con2 input[type=text], [type=email], [type=number] {
+    width: 100%;
 }
 
 .con2 .form-butt {
@@ -61,16 +65,41 @@ h1 {
     background-color: plum;
     font-size: 1rem;
     padding: .5em;
-    width: 30%;
+    width: 12vw;
 }
 
 .button button:hover {
     background-color: red;
 }
 
+.con2 textarea {
+    width: 100%;
+    height: 20vh;
+}
+
+@media screen and (min-width: 1000px) {
+    div[class=head] {
+        font-size: 1.5rem;
+    }
+
+    label, input, select, textarea {
+        font-size: 1.25rem;
+    }
+
+    .button button {
+        width: 7.5vw;
+        font-size: 1.1rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .container {
         width: 100%;
+    }
+
+    .head {
+        padding-left: .5em;
+        padding-right: .5em;
     }
 
     .con1 {
@@ -88,17 +117,16 @@ h1 {
         width: 100%;
     }
 
-    .con2 input {
-        width: 75vw;
+    .con2 input[type=text], [type=email], [type=number] {
+        width: 95%;
         font-size: .938rem;
     }
 
-    .con2 .but {
-        width: auto;
+    .con2 textarea {
+        width: 95%;
     }
 
-    .con2 textarea {
-        width: 100%;
-        height: 20vh;
+    .button button {
+        width: 20vh;
     }
 }

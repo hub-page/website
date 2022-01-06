@@ -9,91 +9,93 @@
     <title>Form</title>
 </head>
 <body>
-    <h1>Good Vibes Form</h1>
-    <div class="container">
-        <div class="head">Tell us something positive that happened to you today.</div>
-        <div class="body">
-            <!-- For Name -->
-            <div class="semi">
-                <div class="con1"><label for="name">Name</label></div>
-                <div class="con2"><input type="text" name="name" id="name" placeholder="Enter Name Here" required></div>
-            </div>
-            <!-- For Email -->
-            <div class="semi">
-                <div class="con1"><label for="email">Email</label></div>
-                <div class="con2"><input type="email" name="email" id="email" placeholder="Enter Email Here" required></div>
-            </div>
-            <!-- For Scaling -->
-            <div class="semi">
-                <div class="con1"><label for="scale">On a scale of 1-10, how good was it?</label></div>
-                <div class="con2"><input type="number" name="scale" id="scale" placeholder="Enter Number Here" required></div>
-            </div>
-            <!-- Options for area -->
-            <div class="semi">
-                <div class="con1"><label for="option">Where did it happen?</label></div>
-                <div class="con2">
-                    <select name="area" id="option" required>
-                        <option selected></option>
-                        <option>At Home</option>
-                        <option>On My Commute</option>
-                        <option>At Work</option>
-                        <option>On The Street</option>
-                        <option>Other</option>
-                    </select>
+    <form>
+        <h1>Good Vibes Form</h1>
+        <div class="container">
+            <div class="head">Tell us something positive that happened to you today.</div>
+            <div class="body">
+                <!-- For Name -->
+                <div class="semi">
+                    <div class="con1"><label for="name">Name</label></div>
+                    <div class="con2"><input type="text" name="name" id="name" placeholder="Enter Name Here" required></div>
                 </div>
-            </div>
-            <!-- Options for Time -->
-            <div class="semi">
-                <div class="con1"><label>At what time of day did it happen?</label></div>
-                <div class="con2">
-                    <div class="form-butt">
-                        <input type="radio" name="time" class="but" id="morning" required>
-                        <label for="morning">Morning</label>
-                    </div>
-                    <div class="form-butt">
-                        <input type="radio" name="time" class="but" id="afternoon" required>
-                        <label for="afternoon">Afternoon</label>
-                    </div>
-                    <div class="form-butt">
-                        <input type="radio" name="time" class="but" id="evening" required>
-                        <label for="evening">Evening</label>
+                <!-- For Email -->
+                <div class="semi">
+                    <div class="con1"><label for="email">Email</label></div>
+                    <div class="con2"><input type="email" name="email" id="email" placeholder="Enter Email Here" required></div>
+                </div>
+                <!-- For Scaling -->
+                <div class="semi">
+                    <div class="con1"><label for="scale">On a scale of 1-10, how good was it?</label></div>
+                    <div class="con2"><input type="number" name="scale" id="scale" placeholder="Enter Number Here" min="1" max="10" required></div>
+                </div>
+                <!-- Options for area -->
+                <div class="semi">
+                    <div class="con1"><label for="option">Where did it happen?</label></div>
+                    <div class="con2">
+                        <select name="area" id="option" required>
+                            <option selected></option>
+                            <option value="home">At Home</option>
+                            <option value="commute">On My Commute</option>
+                            <option value="work">At Work</option>
+                            <option value="street">On The Street</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-            <!-- Options for Emotion -->
-            <div class="semi">
-                <div class="con1"><label>What emotions did you experience?<br>(Select all that apply)</label></div>
-                <div class="con2">
-                    <div class="form-butt">
-                        <input type="checkbox" name="emotion" class="but" id="excited" required>
-                        <label for="excited">Excited</label>
-                    </div>
-                    <div class="form-butt">
-                        <input type="checkbox" name="emotion" class="but" id="humble" required>
-                        <label for="humble">Humble</label>
-                    </div>
-                    <div class="form-butt">
-                        <input type="checkbox" name="emotion" class="but" id="elated" required>
-                        <label for="elated">Elated</label>
-                    </div>
-                    <div class="form-butt">
-                        <input type="checkbox" name="emotion" class="but" id="love" required>
-                        <label for="love">Love</label>
-                    </div>
-                    <div class="form-butt">
-                        <input type="checkbox" name="emotion" class="but" id="enthusiastic" required>
-                        <label for="enthusiastic">Enthusiastic</label>
+                <!-- Options for Time -->
+                <div class="semi">
+                    <div class="con1"><label>At what time of day did it happen?</label></div>
+                    <div class="con2">
+                        <div class="form-butt">
+                            <input type="radio" name="time" class="but" id="morning" required>
+                            <label for="morning">Morning</label>
+                        </div>
+                        <div class="form-butt">
+                            <input type="radio" name="time" class="but" id="afternoon" required>
+                            <label for="afternoon">Afternoon</label>
+                        </div>
+                        <div class="form-butt">
+                            <input type="radio" name="time" class="but" id="evening" required>
+                            <label for="evening">Evening</label>
+                        </div>
                     </div>
                 </div>
+                <!-- Options for Emotion -->
+                <div class="semi">
+                    <div class="con1"><label>What emotions did you experience?<br>(Select all that apply)</label></div>
+                    <div class="con2">
+                        <div class="form-butt">
+                            <input type="checkbox" name="emotion" class="but" id="excited">
+                            <label for="excited">Excited</label>
+                        </div>
+                        <div class="form-butt">
+                            <input type="checkbox" name="emotion" class="but" id="humble">
+                            <label for="humble">Humble</label>
+                        </div>
+                        <div class="form-butt">
+                            <input type="checkbox" name="emotion" class="but" id="elated">
+                            <label for="elated">Elated</label>
+                        </div>
+                        <div class="form-butt">
+                            <input type="checkbox" name="emotion" class="but" id="love">
+                            <label for="love">Love</label>
+                        </div>
+                        <div class="form-butt">
+                            <input type="checkbox" name="emotion" class="but" id="enthusiastic">
+                            <label for="enthusiastic">Enthusiastic</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- For Explanation -->
+                <div class="semi">
+                    <div class="con1"><label for="describe">Please describe your positive experience.</label></div>
+                    <div class="con2"><textarea name="explain" id="describe" placeholder="Enter Your Experience Here" required></textarea></div>
+                </div>
+                <!-- For Button -->
+                <div class="button"><button name="submit" type="submit">Submit</button></div>
             </div>
-            <!-- For Explanation -->
-            <div class="semi">
-                <div class="con1"><label for="describe">Please describe your positive experience.</label></div>
-                <div class="con2"><textarea name="explain" id="describe" placeholder="Enter Your Experience Here" required></textarea></div>
-            </div>
-            <!-- For Button -->
-            <div class="button"><button>Submit</button></div>
         </div>
-    </div>
+    </form>
 </body>
 </html>
