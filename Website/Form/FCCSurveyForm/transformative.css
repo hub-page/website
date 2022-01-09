@@ -1,0 +1,95 @@
+* {box-sizing: border-box;}
+
+:root {color: white;}
+
+body {
+    background-image: linear-gradient(rgba(58, 58, 158, 0.8),rgba(136, 136, 206, 0.7) ), url("survey-form-background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+form {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: .5em 1em 1em;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#head {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    font-family: "Bebas Neue", serif;
+    font-size: 3rem;
+    margin: 0 0 .25em 0;
+}
+
+a {font-size: 1.5rem;}
+
+.container {margin-bottom: 1em;}
+
+.container div:first-child {margin-bottom: .5rem;}
+
+input[type=text],[type=email],[type=number] {
+    width: 100%;
+    font-size: 1.05rem;
+    padding: .25em;
+}
+
+input[type=checkbox] {
+    height: 3vh;
+    width: 3vw;
+}
+
+label {font-size: 1.1rem;}
+
+select {
+    height: 5vh;
+    font-size: 1rem;
+}
+
+option {font-size: 1rem;}
+
+textarea {
+    width: 100%;
+    font-size: 1.05rem;
+    height: 20vh;
+}
+
+button {
+    width: 100%;
+    height: 5vh;
+    font-size: 1rem;
+    padding: .01em;
+    background-color: mediumseagreen;
+}
+
+@media screen and (max-width: 500px) {
+    body {margin: unset;}
+
+    #head {padding: 0 .7em 0 .5em;}
+
+    h2{font-size: 1.75rem;}
+
+    a {font-size: .75rem;}
+
+    form {
+        width: 100%;
+        padding-right: .25em;
+        padding-left: .25em;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    form {
+        width: 75%;
+        padding: 1em 2.5em 1.5em;
+    }
+
+    fieldset {padding: .25em 1.5em 1em;}
+}
