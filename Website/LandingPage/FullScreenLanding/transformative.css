@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+#main-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content {
+    padding: 1em;
+    width: fit-content;
+    color: saddlebrown;
+}
+
+#content h1 {
+    font-size: 3em;
+}
+
+#content p {
+    font-size: 1.35em;
+}
+
+#content button {
+    padding: 1em;
+    width: 15vw;
+    font-size: 1.25em;
+    border-radius: 12px;
+    border: solid 1px saddlebrown;
+    background-color: transparent;
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+#content button:hover {
+    background-color: saddlebrown;
+    color: white;
+}
+
+.fix {margin-bottom: 1rem;}
+
+.txt {
+    padding: 1em;
+    font-size: 1.10em;
+    letter-spacing: 2px;
+    background-color: saddlebrown;
+    text-align: center;
+    color: white;
+}
+
+.txt:nth-child(3) {
+    background-color: white;
+    color: saddlebrown;
+}
+
+#foot {
+    letter-spacing: 2px;
+    display: flex;
+    background-color: saddlebrown;
+    color: white;
+}
+
+#foot div {padding: .5em;}
+
+#foot div:nth-child(2) {
+    background-color: white;
+    color: saddlebrown;
+}
+
+@media screen and (max-width: 500px) {
+    #content h1 {font-size: 1.5em;}
+
+    #content p {font-size: .75em;}
+
+    #content button {
+        min-height: .5em;
+        font-size: .55em;
+    }
+
+    .txt {
+        letter-spacing: 1px;
+        font-size: .75em;
+    }
+
+    #foot {
+        font-size: .5em;
+    }
+}
