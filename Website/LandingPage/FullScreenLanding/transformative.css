@@ -88,11 +88,11 @@
 
     .txt {
         font-size: .75em;
-        line-height: 2.75vh;
+        line-height: 2.45vh;
     }
 
     #foot {
         font-size: .5em;
-        line-height: 2vh;
+        line-height: 1.5vh;
     }
 }
