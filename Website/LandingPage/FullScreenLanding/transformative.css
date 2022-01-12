@@ -32,7 +32,6 @@
 
 #content button {
     padding: 1em;
-    width: 15vw;
     font-size: 1.25em;
     border-radius: 12px;
     border: solid 1px saddlebrown;
@@ -51,28 +50,28 @@
 .txt {
     padding: 1em;
     font-size: 1.10em;
-    letter-spacing: 2px;
+    line-height: 3.4vh;
     background-color: saddlebrown;
     text-align: center;
     color: white;
 }
 
 .txt:nth-child(3) {
-    background-color: white;
+    background-color: #ffffff;
     color: saddlebrown;
 }
 
 #foot {
-    letter-spacing: 2px;
+    line-height: 3vh;
     display: flex;
     background-color: saddlebrown;
     color: white;
 }
 
-#foot div {padding: .5em;}
+#foot div {padding: .5em .5em .5em .75em;}
 
 #foot div:nth-child(2) {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     color: saddlebrown;
 }
 
@@ -82,16 +81,17 @@
     #content p {font-size: .75em;}
 
     #content button {
-        min-height: .5em;
-        font-size: .55em;
+        min-height: .75em;
+        padding: .5rem;
+        font-size: 1em;
     }
 
     .txt {
-        letter-spacing: 1px;
         font-size: .75em;
     }
 
     #foot {
         font-size: .5em;
+        line-height: 2.2vh;
     }
 }
